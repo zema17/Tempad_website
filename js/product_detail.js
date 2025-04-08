@@ -41,9 +41,21 @@ function addToCart(id, stock) {
         return;
     }
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(id);
-    localStorage.setItem("cart", JSON.stringify(cart));
+    const quantity = 1; // hoặc cho phép người dùng chọn số lượng
 
-    alert("✅ Đã thêm sản phẩm vào giỏ hàng!");
+    fetch("php/add_to_cart.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: `product_id=${id}&quantity=${quantity}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data); // thông báo từ server
+    })
+    .catch(error => {
+        console.error("❌ Lỗi khi thêm vào giỏ:", error);
+        alert("Có lỗi xảy ra khi thêm vào giỏ hàng.");
+    });
 }

@@ -69,6 +69,10 @@ function toggleSelection(event) {
             deleteButton.onclick = function() {
                 deleteSelected(selectedProducts, user_id); // Gửi danh sách sản phẩm đã chọn
             };
+            const saleButton = document.getElementById('sale-btn');
+            saleButton.onclick = function() {
+                saleSelected(selectedProducts, user_id); 
+            };
         })
         .catch(error => {
             console.error("Lỗi khi lấy user_id:", error);

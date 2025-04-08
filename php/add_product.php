@@ -23,11 +23,11 @@ if (!empty($_FILES['image']['name'])) {
 
 // Kiểm tra nếu có trường brand hay không
 if (!empty($brand)) {
-    $sql = "INSERT INTO products (name, description, price, category, brand, image) 
-            VALUES ('$name', '$description', '$price', '$category', '$brand', '$image_url')";
+    $sql = "INSERT INTO products (name, description, price, category, brand, stock, image) 
+            VALUES ('$name', '$description', '$price', '$category', '$brand', '$stock', '$image_url')";
 } else {
-    $sql = "INSERT INTO products (name, description, price, category, image) 
-            VALUES ('$name', '$description', '$price', '$category', '$image_url')";
+    $sql = "INSERT INTO products (name, description, price, category, stock, image) 
+            VALUES ('$name', '$description', '$price', '$category', '$stock', '$image_url')";
 }
 
 // Thực thi truy vấn

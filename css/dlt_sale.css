@@ -1,0 +1,48 @@
+/* Cơ bản cho cả hai nút */
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Nút Delete */
+  .delete-btn {
+    background-color: #e74c3c; /* Màu đỏ mạnh mẽ */
+    color: white;
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b; /* Màu đỏ đậm khi hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
+  }
+  
+  .delete-btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  /* Nút Sale */
+  .sale-btn {
+    background-color: #2ecc71; /* Màu xanh lá */
+    color: white;
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+  }
+  
+  .sale-btn:hover {
+    background-color: #27ae60; /* Màu xanh lá đậm khi hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(46, 204, 113, 0.5);
+  }
+  
+  .sale-btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  

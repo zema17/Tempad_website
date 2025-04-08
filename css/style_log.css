@@ -1,0 +1,126 @@
+/* Thiết lập nền gradient */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Khung đăng nhập */
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(10px);
+}
+
+/* Tiêu đề */
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Ô nhập liệu */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus {
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.8);
+}
+
+/* Nút đăng nhập */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1f4e1d;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a0d63b;
+}
+
+/* Liên kết đăng ký */
+p {
+    margin-top: 15px;
+    color: white;
+}
+
+a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Logo hoặc tiêu đề bên trái */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Danh sách menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+/* Mục menu */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}

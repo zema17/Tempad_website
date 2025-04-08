@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glitch 1.5s infinite alternate;
+}
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8); }
+    100% { text-shadow: -2px -2px 5px rgba(0, 255, 255, 0.8); }
+}
+p {
+    font-size: 22px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.loader {
+    margin-top: 30px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #ff0000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Logo hoặc tiêu đề bên trái */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Danh sách menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+/* Mục menu */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}
+
+
+
+.login-btn{
+    background-color: #615d50;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-left: auto;
+}
+.login-btn:hover{
+    background-color: #7dbec0;
+}

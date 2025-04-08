@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbe7e7;
+    margin: 0;
+    padding-top: 60px; /* Khoảng trống cho header cố định */
+}
+
+.profile-container {
+    position: relative;
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Kéo căng các phần tử con theo chiều ngang */
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
+}
+
+.profile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Các style khác giữ nguyên */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ff85a2;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ff4d6d;
+}
+
+p {
+    color: #555;
+}
+/* Style cho vùng sản phẩm để hiển thị theo lưới (ví dụ) */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tăng chiều rộng tối thiểu */
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của container */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước */
+}
+
+.product-item img { /* Nếu bạn có hình ảnh sản phẩm */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới hình ảnh */
+    margin-bottom: 10px;
+}
+
+.product-item h3 { /* Tiêu đề sản phẩm (ví dụ) */
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-item p { /* Thông tin khác của sản phẩm (ví dụ) */
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+/* Định dạng thanh menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Logo hoặc tiêu đề bên trái */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Danh sách menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+/* Mục menu */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}
+
+#logoutBtn {
+    position: absolute; /* Đặt nút trong phạm vi của container */
+    top: 50px; /* Khoảng cách từ trên cùng */
+    right: 50px; /* Khoảng cách từ bên phải */
+    padding: 10px 20px; /* Thêm khoảng đệm cho nút */
+    background-color: #ff6b81; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo tròn góc nút */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay */
+}
+
+#logoutBtn:hover {
+    background-color: #74074f; /* Thay đổi màu khi hover */
+}
+
+#choice-btn {
+    position: absolute; /* Đặt nút trong phạm vi của container */
+    top: 280px; /* Khoảng cách từ trên cùng */
+    right: 50px; /* Khoảng cách từ bên phải */
+    padding: 10px 20px; /* Thêm khoảng đệm cho nút */
+    background-color: #ff6b81; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo tròn góc nút */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay */
+}
+
+#choice-btn:hover {
+    background-color: #74074f; /* Thay đổi màu khi hover */
+}
+/* Kiểu cho nút "Chọn sản phẩm" */
+.chooseBtn {
+    background: linear-gradient(135deg, #6A1B9A, #D32F2F); /* Gradient màu tím và đỏ */
+    color: white; /* Chữ trắng */
+    border: none; /* Không viền */
+    padding: 12px 30px; /* Padding đẹp mắt */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none; /* Không có gạch chân */
+    display: inline-block; /* Hiển thị theo kiểu inline-block */
+    font-size: 18px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ đậm */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    border-radius: 50px; /* Bo tròn góc hoàn toàn */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho nút */
+    transition: all 0.3s ease; /* Tất cả các hiệu ứng sẽ có chuyển động mượt mà */
+}
+
+/* Hiệu ứng hover (di chuột lên nút) */
+.chooseBtn:hover {
+    background: linear-gradient(135deg, #D32F2F, #6A1B9A); /* Đảo ngược gradient khi hover */
+    transform: scale(1.1) rotate(2deg); /* Phóng to và xoay một chút */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+/* Kiểu cho nút khi đã chọn */
+.chooseBtn.selected {
+    background: linear-gradient(135deg, #0288D1, #00C853); /* Gradient màu xanh và xanh lá */
+    color: white; /* Chữ trắng */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho nút đã chọn */
+}
+
+/* Hiệu ứng cho nút đã chọn khi hover */
+.chooseBtn.selected:hover {
+    background: linear-gradient(135deg, #00C853, #0288D1); /* Đảo ngược gradient khi hover */
+    transform: scale(1.1) rotate(-2deg); /* Phóng to và xoay ngược khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+/* Thêm một chút hiệu ứng nhấp khi người dùng nhấn vào nút */
+.chooseBtn:active {
+    transform: scale(0.98); /* Thu nhỏ nút một chút khi nhấn */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Giảm bóng đổ khi nhấn */
+}

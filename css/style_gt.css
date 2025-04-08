@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1624;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Logo hoặc tiêu đề bên trái */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Danh sách menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+/* Mục menu */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}
+
+.login-btn{
+    background-color: #615d50;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-left: auto;
+}
+.login-btn:hover{
+    background-color: #7dbec0;
+}
+.container {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    max-width: 800px;
+    margin-top:3000px; 
+    padding: 20px;
+}
+
+
+.features {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+    justify-content: center;
+    margin-top: 4rem;
+    max-width: 700px;
+}
+
+.feature-box {
+    text-align: center;
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card {
+    transition: transform 0.3s ease-in-out;
+}
+.skill-card:hover {
+    transform: scale(1.05);
+}
+.text-sm {
+    max-width: 600px; /* Giới hạn chiều rộng để văn bản không quá dài */
+    word-wrap: break-word; /* Đảm bảo từ không bị tràn */
+    line-height: 1.6; /* Giúp khoảng cách dòng dễ đọc hơn */
+}
+

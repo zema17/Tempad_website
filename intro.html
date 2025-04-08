@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="css//style_gt.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Trang chu</a></li>
+            <li><a href="intro.html">Gioi thieu</a></li>
+            <li><a href="service.html">Dich vu</a></li>
+            <li><a href="contact.html">Lien he</a></li>
+        </ul>
+        <li><a href="login.html" id="loginButton" class="login-btn">Đăng nhập</a></li>
+    </nav>
+    <script src="js/auth.js"></script>
+    <script src="js/get_user.js"></script>
+    <div class="container flex flex-col items-center gap-10 p-8 text-center">
+
+        <!-- Thông tin cá nhân -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-md">
+            <h1 class="text-2xl font-bold text-red-400">Hi, I'm Mason</h1>
+            <h2 class="text-xl font-semibold mt-2">IT Engineer</h2>
+            <p class="mt-4 text-gray-300">Tôi là một kỹ sư đam mê công nghệ nhúng, IoT, phát triển phần mềm và Website.</p>
+    
+            <div class="mt-4 flex gap-4 justify-center">
+                <a href="https://www.linkedin.com/in/mz2612" class="text-red-400 hover:text-red-300">🔗 Linkedin</a>
+                <a href="https://github.com/zema17" class="text-red-400 hover:text-red-300">🔗 GitHub</a>
+            </div>
+            <a href="img/cv.png" target="_blank">
+            <button class="mt-4 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg">
+                Xem Resume
+            </button></a>
+        </div>
+        <img src="img/pvp001.jpg" alt="Avatar" class="rounded-lg shadow-lg w-96 border-4 border-red-500">
+        <div class="features flex flex-col md:flex-row gap-10 mt-10">
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">⭐</i>
+                <h3 class="text-xl font-bold mt-2">Programming Languages</h3>
+                <p class="text-gray-300 mt-2">C/C++, Python, Java</p>
+            </div>
+    
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">💙</i>
+                <h3 class="text-xl font-bold mt-2">Database</h3>
+                <p class="text-gray-300 mt-2">MySQL, Firebase</p>
+            </div>
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">🌱</i>
+                <h3 class="text-xl font-bold mt-2">Protocol</h3>
+                <p class="text-gray-300 mt-2">UART, I2C, HTTP, HTTPS, WIFI</p>
+            </div>
+    
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">💪</i>
+                <h3 class="text-xl font-bold mt-2">Algorithms & Problem Solving</h3>
+                <p class="text-gray-300 mt-2">Data Structre, Leetcode</p>
+            </div>
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">💡</i>
+                <h3 class="text-xl font-bold mt-2">Logic design</h3>
+                <p class="text-gray-300 mt-2">Verilog/VHDL</p>
+            </div>
+    
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">🔥</i>
+                <h3 class="text-xl font-bold mt-2">Website</h3>
+                <p class="text-gray-300 mt-2">.NET, PHP, CSS, JS</p>
+            </div>
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">⚡</i>
+                <h3 class="text-xl font-bold mt-2">Searching</h3>
+                <p class="text-gray-300 mt-2">Teamwork, Work alone</p>
+            </div>
+    
+            <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md text-center w-80">
+                <i class="icon text-3xl">🖌️</i>
+                <h3 class="text-xl font-bold mt-2">Languages</h3>
+                <p class="text-gray-300 mt-2">Vietnamese, English</p>
+            </div>
+        </div>
+    </div>   
+    <script>
+        AOS.init({
+            duration: 1000, 
+            easing: 'ease-in-out', 
+            once: true 
+        });
+    </script>   
+    <section id="projects">
+        <h2 class="text-3xl font-bold text-green-400">Projects</h2>
+        <div class="border-t border-gray-600 mb-6"></div>
+    
+        <div class="space-y-8">
+            <div class="bg-gray-900 rounded-lg overflow-hidden border border-green-400">
+                <img src="img/finger.png" alt="Project Image" class="w-full max-w-[600px] mx-auto">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Fingerprint Application</h2>
+                    <div class="border-t border-gray-600 my-2"></div>
+                    <p class="text-gray-400 text-sm">
+                        This project is a fingerprint-based attendance system using an ESP8266, a fingerprint sensor, and a MySQL database. Users can enroll, verify, and track attendance via an Android app, which communicates with the ESP8266 over WiFi. Attendance data is stored in MySQL and displayed in real time using Firebase. 🚀
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="text-3xl font-bold text-green-400">Projects</h2>
+        <div class="border-t border-gray-600 mb-6"></div>
+    
+        <div class="space-y-8">
+            <div class="bg-gray-900 rounded-lg overflow-hidden border border-green-400">
+                <img src="img/car.png" alt="Project Image" class="w-full max-w-[600px] h-auto object-cover mx-auto">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Safe Vehicle</h2>
+                    <div class="border-t border-gray-600 my-2"></div>
+                    <p class="text-gray-400 text-sm">
+                        This project is a remote-controlled smart car using an STM32F103C8T6 and an IR remote. It features a 12V motor controlled via a relay for smooth operation. The system ensures reliable wireless control and can be expanded with additional sensors for automation. 🚀
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="text-3xl font-bold text-green-400">Projects</h2>
+        <div class="border-t border-gray-600 mb-6"></div>
+    
+        <div class="space-y-8">
+            <div class="bg-gray-900 rounded-lg overflow-hidden border border-green-400">
+                <img src="img/form_logistic.png" alt="Project Image" class="w-full max-w-[600px] mx-auto">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Logistic Demo</h2>
+                    <div class="border-t border-gray-600 my-2"></div>
+                    <p class="text-gray-400 text-sm">
+                        Create an interface on the Odoo platform using XML to input sender and recipient information for a shipment. Write Python code to operate the interface. Once the process is completed, generate a code that can be downloaded and later used by a reader to record it onto a tag, which will be attached to the package for shipment. The code writing process for the reader should be done in C#.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+</body>
+</html>

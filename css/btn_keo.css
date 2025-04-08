@@ -1,0 +1,26 @@
+#draggable {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(255, 50, 50, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hiệu ứng khi click vào */
+#draggable:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 50, 50, 0.8);
+}

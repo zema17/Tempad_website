@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>⚡ Tech Store</h2>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class ="category" data-category="Laptop">
+                    <i class="fas fa-laptop"></i> Laptops</a>
+                <ul class="submenu">
+                    <li><a href="#" class="brand" data-category="Laptop" data-brand="Apple">Apple</a></li>
+                    <li><a href="#" class="brand" data-category="Laptop" data-brand="Dell">Dell</a></li>
+                    <li><a href="#" class="brand" data-category="Laptop" data-brand="Asus">Asus</a></li>
+                    <li><a href="#" class="brand" data-category="Laptop" data-brand="HP">HP</a></li>
+                    <li><a href="#" class="brand" data-category="Laptop" data-brand="Lenovo">Lenovo</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="category" data-category="Smartphone">
+                    <i class="fas fa-mobile-alt"></i> Smartphones
+                </a>        
+                <ul class="submenu">
+                    <li><a href="#" class="brand" data-category="Smartphone" data-brand="apple">Apple</a></li>
+                    <li><a href="#" class="brand" data-category="Smartphone" data-brand="samsung">Samsung</a></li>
+                    <li><a href="#" class="brand" data-category="Smartphone" data-brand="xiaomi">Xiaomi</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="category" data-category="Accessories">
+                    <i class="fas fa-headphones"></i>Accessories</a>
+                <ul class="submenu">
+                    <li><a href="#" class="brand" data-category="Accessories" data-brand="Mouse">Mouse</a></li>
+                    <li><a href="#" class="brand" data-category="Accessories" data-brand="Creen">Screen</a></li>
+                    <li><a href="#" class="brand" data-category="Accessories" data-brand="Gamepad">Gamepad</a></li>
+                    <li><a href="#" class="brand" data-category="Accessories" data-brand="Speaker">Speaker</a></li>
+                    <li><a href="#" class="brand" data-category="Accessories" data-brand="Headphone">Headphone</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="mysteam.html"><i class="fas fa-gamepad"></i> Gaming</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="category" data-category="Computer">
+                    <i class="fas fa-computer"></i> Computer</a>
+                <ul class="submenu">
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="CPU">CPU</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="Mainboard">Mainboard</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="Case">Case</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="RAM">RAM</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="VGA">VGA</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="SSD">SSD</a></li>
+                    <li><a href="#" class="brand" data-category="Computer" data-brand="PSU">PSU</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>       
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Trang chu</a></li>
+            <li><a href="intro.html">Gioi thieu</a></li>
+            <li><a href="service.html">Dich vu</a></li>
+            <li><a href="contact.html">Lien he</a></li>
+        </ul>
+        <li><a href="login.html" id="loginButton" class="login-btn">Đăng nhập</a></li>
+    </nav>
+    <script src="js/auth.js"></script>
+    <script src="js/get_user.js"></script>
+
+    
+    <div class="home-search">
+        <button class="search-btn" onclick="toggleSearch()">🔍</button>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm sản phẩm..." id="searchInput">
+            <ul id="search-results"></ul>
+        </div>
+    </div>
+    <script src="js/search_btn.js"></script>    
+
+
+    <div class="product-container">
+        <div id="product-list"></div>
+    </div>
+    <script src="js/product.js"></script>
+
+</body>
+</html>

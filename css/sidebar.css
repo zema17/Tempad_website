@@ -1,0 +1,150 @@
+/* Sidebar chính */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề menu */
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #00e0ff;
+}
+
+/* Danh sách menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+/* Các mục menu */
+.sidebar ul li {
+    margin: 15px 0;
+    padding-right: 5px;
+    position: relative;
+}
+
+/* Liên kết menu */
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* Biểu tượng trong menu */
+.sidebar ul li a i {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #00e0ff;
+}
+
+/* Hiệu ứng hover */
+.sidebar ul li a:hover {
+    background: rgba(0, 224, 255, 0.2);
+    transform: translateX(5px);
+    color: #00e0ff;
+}
+
+/* Điều chỉnh nội dung chính để không bị che */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+/* Social Media Buttons */
+/* Đưa social xuống sát đáy */
+.sidebar .social-icons {
+    margin-top: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Style cho các nút social */
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Facebook */
+.social-icons .facebook {
+    background: #1877f2;
+}
+.social-icons .facebook:hover {
+    background: #1056a2;
+}
+
+/* YouTube */
+.social-icons .youtube {
+    background: #ff0000;
+}
+.social-icons .youtube:hover {
+    background: #b30000;
+}
+
+/* Instagram */
+.social-icons .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.social-icons .instagram:hover {
+    opacity: 0.8;
+}
+/* Submenu (ẩn mặc định) */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    background: #282846;
+    width: 150px;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: -200px;
+}
+
+.submenu li {
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.submenu li a {
+    color: white;
+    font-size: 14px;
+}
+
+.submenu li:hover {
+    background: #44445C;
+}
+
+/* Hiện submenu khi hover vào Laptop */
+.dropdown:hover .submenu {
+    display: block;
+}

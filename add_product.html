@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="css/add_product.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box">
+        <h2>🛒 Thêm Sản Phẩm Mới</h2>
+        <form action="php/add_product.php" method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="name">📌 Tên sản phẩm</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên sản phẩm..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="description">📝 Mô tả</label>
+                <textarea id="description" name="description" placeholder="Viết mô tả ngắn gọn..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="price">💰 Giá</label>
+                <input type="number" id="price" name="price" placeholder="Nhập giá..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="category">📂 Danh mục</label>
+                <select id="category" name="category">
+                    <option value="None"> None</option>
+                    <option value="Laptop">💻 Laptop</option>
+                    <option value="Smartphone">📱 Smartphone</option>
+                    <option value="Accessories">🎧 Phụ kiện</option>
+                    <option value="Gaming">🎮 Gaming</option>
+                    <option value="Computer">🖥️ Computer</option>
+                </select>
+            </div>
+            <div class="input-group" id="brand-group" style="display: none;">
+                <label for="brand">🏷️ Hãng</label>
+                <select id="brand" name="brand">
+                </select>
+            <div class="input-group">
+                <label for="image">🖼️ Ảnh sản phẩm</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="stock">Số lượng</label>
+                <input type="number" id="stock" name="stock" placeholder="Nhập số lượng..."required>
+            </div>
+            <button type="submit" class="btn">🚀 Thêm Ngay</button>
+        </form>
+    </div>
+</div>
+<script src="js/add_products.js"></script>
+</body>
+</html>

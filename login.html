@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css//style_log.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Trang chu</a></li>
+            <li><a href="intro.html">Gioi thieu</a></li>
+            <li><a href="service.html">Dich vu</a></li>
+            <li><a href="contact.html">Lien he</a></li>
+        </ul>
+    </nav>
+    <div class="login-container">
+        <h2>Đăng nhập</h2>
+        <form action="php/login.php" method="POST">
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder="Nhập email">
+            </div>
+        
+            <div class="input-group">
+                <input type="password" id="password" name="password" required placeholder="Nhập mật khẩu">
+                <span class="toggle-password" onclick="togglePassword()"></span>
+            </div>
+        
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+    </div>
+    <script src="js/login.js"></script>
+
+</body>
+</html>

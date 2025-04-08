@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Của Bạn</title>
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <img src="img/avatar_user.png" alt="Avatar" class="avatar">
+            <button id="logoutBtn">Đăng Xuất</button>
+            <h2 id="username">Tên Người Dùng</h2>
+            <p id="email">email@example.com</p>
+            <p id="user_id">ID</p>
+            <button id="delete-btn">Xóa sản phẩm</button>
+            <h3>Sản phẩm trong giỏ hàng 🛒</h3>
+            <div id="cart-products" class="product-list">
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Trang chu</a></li>
+                <li><a href="intro.html">Gioi thieu</a></li>
+                <li><a href="service.html">Dich vu</a></li>
+                <li><a href="contact.html">Lien he</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/profile.js" defer></script>
+    <script src="js/display_cart.js" defer></script>
+    <script src="js/delete_cart_db.js" defer></script>
+</body>
+</html>
